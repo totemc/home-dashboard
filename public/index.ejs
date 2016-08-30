@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html ng-app="dashboardApp">
     <head>
-       <%- partial('_partials/coreStyles') -%> 
+        <%- partial('_partials/coreStyles') -%> 
+        <%- partial('_partials/coreScripts') -%>
     </head>
     <body ng-controller="mainController">
         <div ng-repeat = "chore in chores">
@@ -14,5 +15,4 @@
         </div>
         <button ng-click="deleteTodo(name.text)">delete a chore</button>
     </body>
-    <%- partial('_partials/coreScripts') -%>
 </html>

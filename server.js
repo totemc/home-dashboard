@@ -84,5 +84,5 @@ app.delete('/api/chores/:chore_id', function(req, res) {
 		});
 	});
 });
-
+console.log('listening on port 8080.');
 app.listen('8080');
