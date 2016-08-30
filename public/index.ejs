@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="dashboardApp">
+    <head>
+       <%- partial('_partials/coreStyles') -%> 
+    </head>
+    <body ng-controller="mainController">
+        <div ng-repeat = "chore in chores">
+            <div>{{chore._id}}</div>
+            <button ng-click="deleteChore(chore._id)">delete a chore</button>
+        </div>
+        <br>
+        <div class="form-group">
+            <input type="text" class="form-control input-lg text-center" placeholder="what u want to delete?" ng-model="name.text">
+        </div>
+        <button ng-click="deleteTodo(name.text)">delete a chore</button>
+    </body>
+    <%- partial('_partials/coreScripts') -%>
+</html>
